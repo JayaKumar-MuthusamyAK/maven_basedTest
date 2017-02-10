@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">48.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.commonsite.test.Amazon_Test</td><td><a href="#m1"><b>Project_AddCartValidation</b>  </a></td><td class="numi">1</td><td>1486663401906</td><td class="numi">48454</td></tr>
+</table>
+<h1>Default test</h1>
+<h2 id="m1">com.commonsite.test.Amazon_Test:Project_AddCartValidation</h2>
+<div style="padding-left:3em">
+<p>Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7056; process output follows: 
+1486663404299	addons.manager	DEBUG	Application has been upgraded
+1486663404316	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1486663404320	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1486663404324	addons.xpi	DEBUG	startup
+1486663404324	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1486663404325	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1486663404326	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\admin\AppData\Local\Temp\anonymous4642206570918376620webdriver-profile\extensions\webdriver-staging
+1486663404346	addons.xpi	DEBUG	checkForChanges
+1486663404352	addons.xpi	DEBUG	Directory state JSON differs: cache [] state [{&quot;name&quot;:&quot;app-global&quot;,&quot;addons&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;mtime&quot;:1481524752608,&quot;rdfTime&quot;:1405567032000}}},{&quot;name&quot;:&quot;app-profile&quot;,&quot;addons&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\admin\\AppData\\Local\\Temp\\anonymous4642206570918376620webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1486663403144,&quot;rdfTime&quot;:1486663403093}}}]
+1486663404357	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\admin\AppData\Local\Temp\anonymous4642206570918376620webdriver-profile\extensions.json
+1486663404358	addons.xpi	DEBUG	New add-on fxdriver@googlecode.com installed in app-profile
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1486663404578	addons.xpi-utils	DEBUG	Make addon app-profile:fxdriver@googlecode.com visible
+1486663404581	DeferredSave.extensions.json	DEBUG	Save changes
+1486663404582	DeferredSave.extensions.json	DEBUG	Save changes
+1486663404582	addons.xpi	DEBUG	New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
+1486663404587	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1486663404588	DeferredSave.extensions.json	DEBUG	Save changes
+1486663404588	DeferredSave.extensions.json	DEBUG	Save changes
+1486663404598	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1486663404599	addons.xpi-utils	DEBUG	Updating add-on states
+1486663404600	addons.xpi-utils	DEBUG	Writing add-ons list
+1486663406193	DeferredSave.extensions.json	DEBUG	Starting timer
+1486663406239	DeferredSave.extensions.json	DEBUG	Starting write
+1486663406302	DeferredSave.extensions.json	DEBUG	Write succeeded
+1486663406302	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+System JS : ERROR (null):0 - uncaught exception: [object Object]
+JavaScript error: chrome://fxdriver/content/server.js, line 61: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 674: aUrl is undefined
+1486663435073	addons.manager	DEBUG	shutdown
+1486663435074	addons.xpi	DEBUG	shutdown
+1486663435074	addons.xpi-utils	DEBUG	shutdown
+1486663435076	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1486663435083	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;admin-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: FirefoxDriver</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+<br/>at com.commonsite.test.Amazon_Test.Project_AddCartValidation(Amazon_Test.java:23)
+<br/>25 lines not shown
+<p>Caused by Unable to connect to host 127.0.0.1 on port 7056 after 45000 ms. Firefox console output:
+1486663404299	addons.manager	DEBUG	Application has been upgraded
+1486663404316	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1486663404320	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1486663404324	addons.xpi	DEBUG	startup
+1486663404324	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1486663404325	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1486663404326	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\admin\AppData\Local\Temp\anonymous4642206570918376620webdriver-profile\extensions\webdriver-staging
+1486663404346	addons.xpi	DEBUG	checkForChanges
+1486663404352	addons.xpi	DEBUG	Directory state JSON differs: cache [] state [{&quot;name&quot;:&quot;app-global&quot;,&quot;addons&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;mtime&quot;:1481524752608,&quot;rdfTime&quot;:1405567032000}}},{&quot;name&quot;:&quot;app-profile&quot;,&quot;addons&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\admin\\AppData\\Local\\Temp\\anonymous4642206570918376620webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1486663403144,&quot;rdfTime&quot;:1486663403093}}}]
+1486663404357	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\admin\AppData\Local\Temp\anonymous4642206570918376620webdriver-profile\extensions.json
+1486663404358	addons.xpi	DEBUG	New add-on fxdriver@googlecode.com installed in app-profile
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1486663404578	addons.xpi-utils	DEBUG	Make addon app-profile:fxdriver@googlecode.com visible
+1486663404581	DeferredSave.extensions.json	DEBUG	Save changes
+1486663404582	DeferredSave.extensions.json	DEBUG	Save changes
+1486663404582	addons.xpi	DEBUG	New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
+1486663404587	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1486663404588	DeferredSave.extensions.json	DEBUG	Save changes
+1486663404588	DeferredSave.extensions.json	DEBUG	Save changes
+1486663404598	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1486663404599	addons.xpi-utils	DEBUG	Updating add-on states
+1486663404600	addons.xpi-utils	DEBUG	Writing add-ons list
+1486663406193	DeferredSave.extensions.json	DEBUG	Starting timer
+1486663406239	DeferredSave.extensions.json	DEBUG	Starting write
+1486663406302	DeferredSave.extensions.json	DEBUG	Write succeeded
+1486663406302	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+System JS : ERROR (null):0 - uncaught exception: [object Object]
+JavaScript error: chrome://fxdriver/content/server.js, line 61: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 674: aUrl is undefined
+1486663435073	addons.manager	DEBUG	shutdown
+1486663435074	addons.xpi	DEBUG	shutdown
+1486663435074	addons.xpi-utils	DEBUG	shutdown
+1486663435076	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1486663435083	addons.manager	DEBUG	Async provider shutdown done
+</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+<br/>at com.commonsite.test.Amazon_Test.Project_AddCartValidation(Amazon_Test.java:23)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
